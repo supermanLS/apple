@@ -116,7 +116,6 @@
 .banner li {
   position: absolute;
   width: 100%;
-  float: left;
   left: 100%;
   height: 100%;
 }
@@ -198,15 +197,9 @@
     width: 100%;
     min-height: 325px;
   }
-}
-@media screen and (max-width: 1068px) {
-  .bannerbox {
-    width: 100%;
-    min-height: 325px;
-  }
-  .banner {
-    width: 100%;
-    min-height: 325px;
+  .btnleft,
+  .btnright {
+    display: none;
   }
 }
 .c-a {
@@ -341,4 +334,7 @@
   .zh {
     float: none;
   }
+}
+.footerc a:hover {
+  text-decoration: underline;
 }
