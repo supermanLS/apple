@@ -87,10 +87,14 @@ $(function(){
         $('.nav:last-child').slideToggle("slow");
       });
        $(".footerc h3").click(function(){
-
+               var lw=$(window).width();
+               if(lw>768){
+                   return false;
+               }else{
                    $a=$(this).next('ul');
                    //console.log($a);
                    $a.slideToggle("slow");
+               }
                });
          window.onresize=function(){
              var lw=$(window).width();
